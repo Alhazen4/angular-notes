@@ -1,7 +1,16 @@
 # Angular Notes Web App Preview
 
+Homepage:
 ![Annotation 2022-10-21 105238](https://user-images.githubusercontent.com/62123569/197108019-629aed55-ca05-451b-a01d-4d3b92e0b2c6.png)
-![Annotation 2022-10-21 105401](https://user-images.githubusercontent.com/62123569/197108068-a14802c7-3a0a-40e7-b081-26006d1fadca.png)
+
+Search Feature:
+![Annotation 2022-10-21 154929](https://user-images.githubusercontent.com/62123569/197155298-792a3092-ec71-4055-8396-e4f8c790d6f8.png)
+
+List of Notes:
+![Annotation 2022-10-21 154929](https://user-images.githubusercontent.com/62123569/197155195-1d908d35-a8b2-42b9-a52b-a475951740c5.png)
+
+Note Detail:
+![Annotation 2022-10-21 154929](https://user-images.githubusercontent.com/62123569/197155457-a378ee0e-f3b9-45cc-b732-30e8207573fc.png)
 
 # AngularNotes
 
