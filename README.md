@@ -1,3 +1,8 @@
+# Angular Notes Web App Preview
+
+![Annotation 2022-10-21 105238](https://user-images.githubusercontent.com/62123569/197108019-629aed55-ca05-451b-a01d-4d3b92e0b2c6.png)
+![Annotation 2022-10-21 105401](https://user-images.githubusercontent.com/62123569/197108068-a14802c7-3a0a-40e7-b081-26006d1fadca.png)
+
 # AngularNotes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
