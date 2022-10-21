@@ -28,9 +28,4 @@ export class NotesComponent implements OnInit {
   this.noteService.addNote({ title, body } as Note)
     .subscribe(note => {this.notes.push(note)});
   }
-
-  delete(note: Note): void {
-    this.notes = this.notes.filter(n => n !== note);
-    this.noteService.deleteNote(note).subscribe();
-  }
 }

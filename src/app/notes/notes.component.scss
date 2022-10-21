@@ -1,4 +1,48 @@
-.selected {
-    background-color: rgb(35, 36, 36);
-    color: rgb(209, 209, 209);
+@import '../../styles.scss';
+
+body {
+    @include flex-center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.ul-notes {
+    .li-notes {
+        @include flex-center;
+        @include button;
+        list-style: none;
+        margin-bottom: 20px;
+        width: 30vh;
+        background-color: $secondary_color;
+        
+        .a-notes {
+            color: white;
+            text-decoration: none ;
+        }
+    }
+}
+
+.ul-new-notes {
+    @include flex-center;
+
+    .li-new-notes {
+        list-style: none;
+        margin: 5px 0;
+
+        input {
+            @include input;
+        }
+
+        #add-body {
+            @include input;
+            height: 15vh;
+        }
+
+        button {
+            @include button;
+            background-color: rgb(102, 197, 153);
+        }
+    }
 }

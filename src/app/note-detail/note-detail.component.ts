@@ -41,4 +41,7 @@ export class NoteDetailComponent implements OnInit {
     }
   }
 
+  remove(note: Note): void {
+    this.noteService.deleteNote(note).subscribe(() => this.goBack());
+  }
 }

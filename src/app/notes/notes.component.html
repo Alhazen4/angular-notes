@@ -1,22 +1,21 @@
-<h2>Note</h2>
-<ul>
-    <li *ngFor="let note of notes">
-            <a routerLink="/detail/{{ note.id }}">
+<body>
+    <h2>Note</h2>
+    <ul class="ul-notes">
+        <li *ngFor="let note of notes" class="li-notes">
+            <a routerLink="/detail/{{ note.id }}" class="a-notes">
                 <span>{{ note.title }} </span>
-                <span>{{ note.id }} </span>
-                <span>{{ note.body }} </span>
             </a>
-            <button type="button" (click)="delete(note)">x</button>
-    </li>
-</ul>
-
-<div>
-    <h2>Add New Note</h2>
-    <label for="add-title">Add New Title</label>
-    <input type="text" id="add-title" #noteTitle/>
-    <br>
-    <label for="add-body">Add New Body</label>
-    <input type="text" id="add-body" #noteBody/>
-    <br>
-    <button type="button" (click)="add(noteTitle.value, noteBody.value)">Add Note</button>
-</div>
+        </li>
+    </ul>
+    
+    <div>
+        <ul class="ul-new-notes">
+            <h2>Add New Note</h2>
+            <li class="li-new-notes"><label for="add-title">Add New Title</label></li>
+            <li class="li-new-notes"><input type="text" id="add-title" autocomplete="off" #noteTitle/></li>
+            <li class="li-new-notes"><label for="add-body">Add New Body</label></li>
+            <li class="li-new-notes"><textarea type="text" id="add-body" autocomplete="off" #noteBody></textarea></li>
+            <li class="li-new-notes"><button type="button" (click)="add(noteTitle.value, noteBody.value)">Add Note</button></li>
+        </ul>
+    </div>
+</body>

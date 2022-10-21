@@ -50,6 +50,14 @@ button {
             background-color: $primary_color;
         }
     }
+
+    &.btn-remove {
+        background-color: rgb(202, 116, 116);
+
+        &:hover {
+            background-color: $primary_color;
+        }
+    }
 }
 
 .buttons {
