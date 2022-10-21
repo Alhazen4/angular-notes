@@ -1,0 +1,59 @@
+@import '../../styles.scss';
+
+body {
+    // background-color: $secondary_color;
+
+}
+
+ul {
+    @include flex-center;
+
+    li {
+        list-style: none;
+        margin: 5px 0;
+
+        .note-input {
+            @include input;
+            height: 15vh;
+        }
+    }
+}
+
+.note-show {
+    @include flex-center;
+    margin-bottom: 7px;
+}
+
+.note-edit {
+    @include flex-center;
+    input {
+        @include input;
+    }
+}
+
+button {
+    @include button;
+    margin-left: 20px;
+
+    &.btn-save {
+        background-color: rgb(102, 197, 153);
+
+        &:hover {
+            background-color: $primary_color;
+        }
+    }
+
+    &.btn-back {
+        background-color: $secondary_color;
+
+        &:hover {
+            background-color: $primary_color;
+        }
+    }
+}
+
+.buttons {
+    @include flex-center;
+    flex-direction: row;
+}
+

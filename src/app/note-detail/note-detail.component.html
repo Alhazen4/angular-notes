@@ -1,0 +1,19 @@
+<body>
+    <div *ngIf="note">
+        <div class="note-show">
+            <h3>{{ note.title | uppercase }}</h3>
+        </div>
+        <div class="note-edit">
+            <ul>
+                <li><label for="edit-note">Title:</label></li>
+                <li><input type="text" id="edit-note" [(ngModel)]="note.title"></li>
+                <li><label for="edit-note">Note:</label></li>
+                <li><textarea class="note-input" type="text" id="edit-note" [(ngModel)]="note.body"></textarea></li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <button class="btn-save" type="button" (click)="save()" style="margin-left: 0;">Save</button>
+            <button class="btn-back" type="button" (click)="goBack()">Go Back</button>
+        </div>
+    </div>
+</body>

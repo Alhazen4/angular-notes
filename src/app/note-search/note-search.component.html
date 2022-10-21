@@ -1,0 +1,9 @@
+<div class="body">
+    <input #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="Note Search" autocomplete="off"/>
+
+    <ul>
+        <li *ngFor="let note of componentNotes$ | async">
+            <a routerLink="/detail/{{ note.id }}"> {{ note.title }} </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,25 @@
+@import '../../styles.scss';
+
+body, .message-box {
+    @include flex-center;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 5vh;
+}
+
+button {
+    background-color: rgb(201, 136, 136);
+    color: white;
+    border: 0;
+    padding: 10px 30px;
+    margin: 10px 0;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $primary_color;
+        cursor: pointer;
+    }
+}
